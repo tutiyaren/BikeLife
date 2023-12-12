@@ -1,0 +1,57 @@
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.contact-ttl__top {
+    letter-spacing: 15px;
+}
+.name-ttl__top,
+.email-ttl__top,
+.content-ttl__top {
+    font-weight: bold;
+}
+.name-inner__confimation,
+.email-inner__confimation,
+.content-inner__confimation {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 1% 2%;
+    border: none;
+    box-shadow: 2px 2px 4px gray;
+}
+.content-inner__textarea {
+    padding: 2% 2%;
+}
+.correction {
+    margin-top: 3%;
+}
+.correction-submit {
+    border: none;
+    background-color: #fff;
+    color: blue;
+    cursor: pointer;
+}
+.button {
+    width: 60%;
+    margin: 5% auto 0;
+}
+.button-submit {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 1% 4%;
+    box-shadow: 2px 2px gray;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button-submit:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}

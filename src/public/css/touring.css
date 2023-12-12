@@ -1,0 +1,241 @@
+.touring {
+    width: 100%;
+    display: flex;
+}
+
+/* 左・検索、募集 */
+.touring-left {
+    width: 40%;
+    margin: 7% auto;
+    padding-left: 2%;
+}
+.search {
+    background-color: rgb(238, 156, 142);
+    padding: 4% 8%;
+}
+.search-nick,
+.search-look__gender,
+.search-look__age,
+.search-place__day,
+.search-place__stay,
+.search-place__distance,
+.search-place__destination {
+    margin-bottom: 4%;
+}
+.search-nick__ttl,
+.search-look__geander-ttl,
+.search-look__age-ttl,
+.search-place__day-ttl,
+.search-place__stay-ttl,
+.search-place__distance-ttl,
+.search-place__destination-ttl {
+    font-weight: bold;
+}
+.search-nick {
+    display: flex;
+    flex-direction: column;
+}
+.search-nick__name,
+.destination {
+    width: 70%;
+    border-bottom: 1px solid gray;
+    background-color: rgb(238, 156, 142);
+    padding: 1% 2%;
+}
+.button,
+.tweet {
+    margin: 9% auto 0;
+    width: 100%;
+    text-align: center;
+}
+.button-submit,
+.tweet-submit {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 1% 4%;
+    box-shadow: 2px 2px gray;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.button-submit:active,
+.tweet-submit:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}
+.reset {
+    text-align: center;
+    margin-top: 4%;
+}
+.reset-link {
+    color: red;
+    font-size: 13px;
+}
+
+/* 右・投稿一覧 */
+.touring-right {
+    width: 60%;
+    margin: 3% auto;
+    max-height: 900px;
+    overflow-y: auto;
+}
+.not {
+    margin: 30% auto;
+    text-align: center;
+}
+.not-search {
+    color: rgb(0, 173, 153);
+    font-size: 20px;
+}
+.card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(187, 185, 185);
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 10%;
+}
+.card-user {
+    display: flex;
+    margin-top: 2%;
+}
+.card-user,
+.touring-place,
+.card-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 3%;
+}
+.icon {
+    width: 30%;
+}
+.fa-user {
+    font-size: 350%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 8%;
+    background-color: rgb(213, 213, 141);
+}
+.card-user__top {
+    width: 80%;
+    text-align: left;
+}
+.name-time {
+    margin-top: 3%;
+}
+.card-user__top-name {
+    font-weight: bold;
+    margin-right: 3%;
+}
+.card-user__top-time {
+    color: rgb(196, 194, 194);
+}
+.card-user__profile {
+    text-align: left;
+    margin-top: 1%;
+}
+.card-user__profile-age {
+    margin-left: 15%;
+    margin-right: 4%;
+}
+.card-user__profile-age,
+.card-user__profile-gender {
+    color: rgb(196, 194, 194);
+}
+.touring-place,
+.touring-place__day,
+.touring-place__stay,
+.touring-place__distance,
+.touring-place__destination {
+    display: flex;
+    flex-wrap: wrap;
+}
+.touring-place__day,
+.touring-place__stay {
+    width:50%;
+}
+.touring-place__distance,
+.touring-place__destination {
+    width: 100%;
+    margin-top: 2%;
+}
+.touring-place__day-ttl,
+.touring-place__stay-ttl,
+.touring-place__distance-ttl,
+.touring-place__destination-ttl {
+    color: rgb(86, 86, 86);
+}
+.daier,
+.stay,
+.load,
+.destination-input {
+    font-weight: bold;
+    border-bottom: 1px solid tomato;
+}
+/* 投稿内容 */
+.card-text__content {
+    line-height: 150%;
+    letter-spacing: 3px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+/* 評価 */
+.card-foot {
+    border-top: 1px solid gray;
+    text-align: right;
+}
+.good {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.card-foot__good {
+    margin-right: 7%;
+}
+.fa-thumbs-up,
+.card-foot__good {
+    font-size: 150%;
+}
+
+@media screen and (max-width:900px) {
+    .touring-place__day,
+    .touring-place__stay {
+        width:100%;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:800px) {
+    .fa-user {
+        font-size: 260%;
+    }
+    .card-user__top-time {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:695px) {
+    .card-user__top-time {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .touring {
+        flex-direction: column;
+    }
+    .touring-left {
+        padding-left: 0;
+        width: 80%;
+    }
+    .touring-right {
+        width: 90%;
+    }
+}

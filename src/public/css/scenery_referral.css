@@ -1,0 +1,195 @@
+.referral {
+    width: 100%;
+}
+.referral-form {
+    width: 80%;
+    margin: 7% auto;
+    text-align: center;
+}
+.title,
+.division,
+.content,
+.button {
+    margin-bottom: 5%;
+}
+/* タイトル */
+.title-top {
+    font-weight: bold;
+    margin-right: 3%;
+}
+.title-input {
+    padding: 1% 2%;
+    border: none;
+    width: 50%;
+    box-shadow: 4px 4px 2px rgb(243, 134, 134);
+    font-size: 18px;
+}
+/* 区分 */
+.division {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.division-area {
+    margin-right: 9%;
+}
+.division-area__select,
+.division-genre__select {
+    padding: 10% 15%;
+    font-size: 16px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(243, 134, 134);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.division-genre {
+    margin-left: 9%;
+}
+/* テキスト */
+.content {
+    width: 100%;
+}
+.content-inner {
+    width: 60%;
+    border: none;
+    box-shadow: 2px 2px 1px rgb(243, 134, 134);
+    font-size: 15px;
+    padding: 2% 3%;
+    letter-spacing: 3px;
+    line-height: 130%;
+}
+/* 画像 */
+.img {
+    width: 90%;
+    margin: 0 auto 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-image,
+.img-image1,
+.img-image2,
+.img-image3 {
+    width: 45%;
+    height: 270px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.image,
+.image1,
+.image2,
+.image3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-image {
+    background-color: rgb(245, 245, 245);
+}
+.img-image,
+.img-image1,
+.img-image2,
+.img-image3 {
+    box-shadow: 4px 4px 4px rgb(243, 134, 134);
+}
+.img-image2,
+.img-image3 {
+    margin-top: 5%;
+}
+/* 投稿ボタン */
+.button {
+    width: 60%;
+    margin: 5% auto;
+}
+.button-submit {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 1% 4%;
+    box-shadow: 2px 2px gray;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.button-submit:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}
+.error {
+    margin: 0 auto;
+    text-align: center;
+}
+.error-message {
+    color: red;
+}
+
+@media screen and (max-width:1000px) {
+    .title-input {
+        font-size: 15px;
+    }
+    .division-area__select,
+    .division-genre__select  {
+        font-size: 13px;
+    }
+    .content-inner {
+        font-size: 12px;
+    }
+    .img {
+        grid-template-rows: 240px 240px;
+        width: 92%;
+    }
+    .img-image,
+    .img-image1,
+    .img-image2,
+    .img-image3 {
+        height: 240px;
+    }
+}
+@media screen and (max-width:790px) {
+    .title-input {
+        font-size: 12px;
+    }
+    .division-area__select,
+    .division-genre__select  {
+        font-size: 10px;
+    }
+    .content-inner {
+        font-size: 9px;
+    }
+    .img {
+        grid-template-rows: 180px 180px;
+        width: 95%;
+    }
+    .img-image,
+    .img-image1,
+    .img-image2,
+    .img-image3 {
+        height: 180px;
+    }
+}
+@media screen and (max-width:600px) {
+    .title-input {
+        font-size: 9px;
+    }
+    .division-area__select,
+    .division-genre__select  {
+        font-size: 7px;
+    }
+    .content-inner {
+        font-size: 6px;
+    }
+    .img {
+        grid-template-rows: 140px 140px;
+        width: 98%;
+    }
+    .img-image,
+    .img-image1,
+    .img-image2,
+    .img-image3 {
+        height: 140px;
+    }
+}

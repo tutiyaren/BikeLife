@@ -1,0 +1,31 @@
+.thanks {
+    width: 50%;
+    margin: 8% auto 8%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: none;
+    box-shadow: 2px 2px 4px gray;
+}
+.thanks-ttl {
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.thanks-back__link {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 1% 4%;
+    box-shadow: 2px 2px gray;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.thanks-back__link:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}

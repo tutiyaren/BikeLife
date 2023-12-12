@@ -1,0 +1,155 @@
+.tweet {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* 検索機能 */
+.tweet-search {
+    border: 1px solid gray;
+    width: 40%;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+.tweet-search__inner {
+    border: none;
+    width: 90%;
+    padding: 2%;
+}
+
+/* 投稿一覧 */
+/* ユーザー情報 */
+.tweet-cards {
+    width: 80%;
+    margin: 0 auto 3%;
+    max-height: 700px;
+    overflow-y: auto;
+}
+.card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(187, 185, 185);
+    margin-top: 2%;
+}
+.card-user {
+    display: flex;
+    margin-top: 2%;
+}
+.icon {
+    width: 20%;
+}
+.fa-user {
+    font-size: 370%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 8%;
+    background-color: rgb(213, 213, 141);
+}
+.card-user__top {
+    width: 80%;
+    text-align: left;
+}
+.name-time {
+    margin-top: 3%;
+}
+.card-user__top-name {
+    font-weight: bold;
+    margin-right: 3%;
+}
+.card-user__top-time {
+    color: rgb(196, 194, 194);
+}
+.card-user__profile {
+    text-align: left;
+    margin-top: 1%;
+}
+.card-user__profile-age {
+    margin-left: 15%;
+    margin-right: 4%;
+}
+.card-user__profile-age,
+.card-user__profile-gender {
+    color: rgb(196, 194, 194);
+}
+/* 投稿内容 */
+.card-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 3%;
+}
+.card-text__content {
+    line-height: 130%;
+    letter-spacing: 2px;
+}
+/* 評価 */
+.card-foot {
+    border-top: 1px solid gray;
+    text-align: right;
+}
+.good {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.card-foot__good {
+    margin-right: 7%;
+}
+.fa-thumbs-up,
+.card-foot__good {
+    font-size: 150%;
+}
+/* 投稿する */
+.post {
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 10%;
+    padding: 1%;
+    background-color: orange;
+    margin-bottom: 2%;
+}
+.tweet-post {
+    text-decoration: none;
+}
+.post:hover {
+    background-color: rgb(253, 194, 84);
+}
+
+@media screen and (max-width:1030px) {
+    .tweet-search__inner {
+        width: 86%;
+    }
+    .fa-user {
+        font-size: 300%;
+    }
+    .post {
+        width: 13%;
+    }
+}
+@media screen and (max-width:700px) {
+    .fa-user {
+        font-size: 240%;
+        margin-top: 3%;
+    }
+    .post {
+        width: 16%;
+    }
+}
+@media screen and (max-width:692px) {
+    .tweet-search__inner {
+        width: 70%;
+    }
+}
+@media screen and (max-width:590px) {
+    .fa-user {
+        font-size: 200%;
+    }
+    .post {
+        width: 19%;
+    }
+}

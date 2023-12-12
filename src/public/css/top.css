@@ -1,0 +1,70 @@
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.card {
+    width: 45%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    border: none;
+    overflow: hidden;
+}
+.know {
+    background-image: url('/storage/tree.jpg');
+}
+.profile {
+    background-image: url('/storage/fuji.jpg');
+}
+.mypage {
+    background-image: url('/storage/mypage.jpg');
+}
+.tweet {
+    background-image: url('/storage/face.jpg');
+}
+.touring {
+    background-image: url('/storage/touring.jpg');
+}
+.card-item__food {
+    background-image: url('/storage/eating.jpg');
+}
+.card-item__scenery {
+    background-image: url('/storage/liver.jpg');
+}
+.know, 
+.profile,
+.mypage,
+.tweet, 
+.touring, 
+.card-item__food, 
+.card-item__scenery {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-home,
+.card-mumble,
+.card-touring,
+.card-item__food-drink,
+.card-item__scenery-like {
+    padding: 15%;
+}
+.card-home__link,
+.card-mumble__link,
+.card-touring__link,
+.card-item__food-drink--link,
+.card-item__scenery-like--link {
+    text-decoration: none;
+    color: rgb(106, 255, 98);
+}
+.card-item {
+    display: flex;
+    border: none;
+}
+.card-item__food,
+.card-item__scenery {
+    width: 50%;
+}

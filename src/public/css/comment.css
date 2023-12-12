@@ -1,0 +1,240 @@
+.comment {
+    width: 100%;
+    display: flex;
+}
+/* コメント・左 */
+.comment-left {
+    width: 50%;
+    margin: 8% auto;
+}
+.card {
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(187, 185, 185);
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 7%;
+}
+.card-user {
+    display: flex;
+    margin-top: 2%;
+}
+.card-user,
+.touring-place,
+.card-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 3%;
+}
+.icon {
+    width: 30%;
+}
+.fa-user {
+    font-size: 350%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 8%;
+    background-color: rgb(213, 213, 141);
+}
+.card-user__top {
+    width: 80%;
+    text-align: left;
+}
+.name-time {
+    margin-top: 3%;
+}
+.card-user__top-name {
+    font-weight: bold;
+    margin-right: 3%;
+}
+.card-user__top-time {
+    color: rgb(196, 194, 194);
+}
+.card-user__profile {
+    text-align: left;
+    margin-top: 1%;
+}
+.card-user__profile-age {
+    margin-left: 15%;
+    margin-right: 4%;
+}
+.card-user__profile-age,
+.card-user__profile-gender {
+    color: rgb(196, 194, 194);
+}
+.touring-place,
+.touring-place__day,
+.touring-place__stay,
+.touring-place__distance,
+.touring-place__destination {
+    display: flex;
+    flex-wrap: wrap;
+}
+.touring-place__day,
+.touring-place__stay {
+    width:50%;
+}
+.touring-place__distance,
+.touring-place__destination {
+    width: 100%;
+    margin-top: 2%;
+}
+.touring-place__day-ttl,
+.touring-place__stay-ttl,
+.touring-place__distance-ttl,
+.touring-place__destination-ttl {
+    color: rgb(86, 86, 86);
+}
+.daier,
+.stay,
+.load,
+.destination-input {
+    font-weight: bold;
+    border-bottom: 1px solid tomato;
+}
+/* 投稿内容 */
+.card-text__content {
+    line-height: 150%;
+    letter-spacing: 3px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+/* コメント・右 */
+.comment-right {
+    width: 50%;
+    margin: 3% auto;
+    max-height: 700px;
+    overflow-y: auto;
+}
+.text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.text-textarea {
+    width: 100%;
+    padding: 3%;
+}
+.replie-textarea {
+    margin-top: 2%;
+}
+.text-button {
+    width: 60%;
+    margin: 3% auto;
+}
+.text-button__submit {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 1% 4%;
+    box-shadow: 2px 2px gray;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.text-button__submit:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}
+.not {
+    margin: 25% auto;
+    text-align: center;
+}
+.not-search {
+    color: rgb(0, 173, 153);
+    font-size: 20px;
+}
+/* 評価 */
+.card-foot {
+    border-top: 1px solid gray;
+    text-align: right;
+}
+.fa-message {
+    font-size: 140%;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-right: 7%;
+}
+.replie-area {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.touring-replie__content {
+    width: 95%;
+    margin-left: 0;
+    margin: 2% auto 0;
+    text-align: center;
+    border: 1px solid rgb(170, 170, 170);
+}
+.replieIcon {
+    font-size: 300%;
+}
+.error {
+    text-align: center;
+}
+.error-message {
+    color: red;
+    margin-top: 1%;
+}
+.no {
+    margin: 5% auto;
+}
+.no-search {
+    color: rgb(0, 173, 153);
+    font-size: 15px;
+}
+
+@media screen and (max-width:900px) {
+    .fa-user {
+        font-size: 320%;
+    }
+    .icon {
+        width: 34%;
+    }
+    .many {
+        font-size: 270%;
+    }
+    .touring-place__day,
+    .touring-place__stay {
+        width:100%;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:800px) {
+    .fa-user {
+        font-size: 260%;
+    }
+    .many {
+        font-size: 240%;
+    }
+    .card-user__top-time {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:695px) {
+    .card-user__top-time {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .comment {
+        flex-direction: column;
+    }
+    .comment-left {
+        padding-left: 0;
+        width: 80%;
+    }
+    .comment-right {
+        width: 90%;
+    }
+}
